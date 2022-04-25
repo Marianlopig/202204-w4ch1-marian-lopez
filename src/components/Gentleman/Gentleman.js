@@ -1,6 +1,6 @@
 const Gentleman = ({ gentleman }) => {
   return (
-    <li className="gentleman">
+    <li className="gentleman" key={gentleman.id}>
       <div className="gentleman__avatar-container">
         <img
           className="gentleman__avatar"
