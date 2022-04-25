@@ -1,6 +1,9 @@
-const Gentleman = ({ gentleman }) => {
+const Gentleman = ({ gentleman, action }) => {
   return (
-    <li className="gentleman">
+    <li
+      className={"gentleman" + (gentleman.selected ? " selected" : "")}
+      onClick={action}
+    >
       <div className="gentleman__avatar-container">
         <img
           className="gentleman__avatar"
