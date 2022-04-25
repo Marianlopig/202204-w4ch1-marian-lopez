@@ -1,11 +1,11 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Gentleman from "./components/Gentleman/Gentleman";
 import Button from "./components/Button/Button";
 import Text from "./components/Text/Text";
 import gentlemens from "./gentlemen";
 
 function App() {
-  const [gentlemen, setGentlemen] = useState(gentlemens);
+  // const [gentlemen, setGentlemen] = useState(gentlemens);
 
   return (
     <>
@@ -19,7 +19,7 @@ function App() {
         </section>
         <main className="main">
           <ul className="gentlemen">
-            {gentlemen.map((gentleman) => {
+            {gentlemens.map((gentleman) => {
               return <Gentleman gentleman={gentleman} />;
             })}
           </ul>
