@@ -17,7 +17,15 @@ function App() {
           <Text
             number={gentlemen.filter((gentleman) => gentleman.selected).length}
           />
-          <Button />
+          <Button
+            action={() => {
+              const selectedGentlemen = gentlemen.map((gentleman) => {
+                gentleman.selected = true;
+                return gentleman;
+              });
+              setGentlemen(selectedGentlemen);
+            }}
+          />
         </section>
         <main className="main">
           <ul className="gentlemen">
