@@ -1,4 +1,8 @@
-const Button = () => {
-  return <button className="button button--select">Select all</button>;
+const Button = ({ action }) => {
+  return (
+    <button className="button button--select" onClick={action}>
+      Select all
+    </button>
+  );
 };
 export default Button;
