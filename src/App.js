@@ -20,7 +20,7 @@ function App() {
         <main className="main">
           <ul className="gentlemen">
             {gentlemens.map((gentleman) => {
-              return <Gentleman gentleman={gentleman} />;
+              return <Gentleman key={gentlemens.id} gentleman={gentleman} />;
             })}
           </ul>
         </main>
